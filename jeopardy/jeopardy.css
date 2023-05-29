@@ -1,0 +1,113 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body {
+  background-color: wheat;
+}
+
+h1 {
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  margin: 25px 120px 35px 120px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-bottom: 15px;
+  width: 70%;
+  height: 500px;
+  text-align: center;
+  border-radius: 1%;
+  background-color: blue;
+  color: white;
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 90px;
+  height: 90px;
+  border: 4px solid white;
+  border-radius: 3%;
+}
+
+tr {
+  height: 150px;
+}
+
+td {
+  width: 90px;
+  height: 140px;
+  border: 4px solid white;
+  border-radius: 3%;
+
+}
+
+#button-div {
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+
+}
+
+button {
+  width: 160px;
+  height: 40px;
+  background-color: blueviolet;
+}
+
+
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 3s, visibility 3s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+
+
+
